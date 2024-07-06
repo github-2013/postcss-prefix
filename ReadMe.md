@@ -1,4 +1,4 @@
-# postcss-prefix
+# postcss-prefix-x
 
 
 > Prefix every CSS selector with a custom namespace `.a => .prefix`
@@ -17,13 +17,13 @@
 ## Install
 
 ```console
-$ npm install postcss-prefix
+$ npm install postcss-prefix-x
 ```
 
 ## Usage with PostCSS
 
 ```js
-const prefixer = require('postcss-prefix')
+const prefixer = require('postcss-prefix-x')
 
 // css to be processed
 const css = fs.readFileSync("input.css", "utf8")
@@ -51,7 +51,7 @@ You will get the following output
 
 ## Usage with webpack
 
-Use it like you'd use any other PostCSS plugin. If you also have `autoprefixer` in your webpack config then make sure that `postcss-prefix-selector` is called first. This is needed to avoid running the prefixer twice on both standard selectors and vendor specific ones (ex: `@keyframes` and `@webkit-keyframes`).
+Use it like you'd use any other PostCSS plugin. If you also have `autoprefixer` in your webpack config then make sure that `postcss-prefix-x` is called first. This is needed to avoid running the prefixer twice on both standard selectors and vendor specific ones (ex: `@keyframes` and `@webkit-keyframes`).
 
 ```js
 module: {
@@ -65,7 +65,7 @@ module: {
         options: {
           postcssOptions: {
             plugins: {
-              "postcss-prefix": {
+              "postcss-prefix-x": {
                 prefix: '.some-prefix',
               },
               autoprefixer: {
@@ -86,7 +86,7 @@ module: {
 Following the same way of Webpack but for Vite:
 
 ```js
-import prefixer from 'postcss-prefix';
+import prefixer from 'postcss-prefix-x';
 import autoprefixer from 'autoprefixer';
 
 ...

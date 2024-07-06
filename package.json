@@ -1,0 +1,23 @@
+{
+  "name": "postcss-prefix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/prefix",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github-2013/postcss-prefix.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/github-2013/postcss-prefix/issues"
+  },
+  "homepage": "https://github.com/github-2013/postcss-prefix#readme",
+  "dependencies": {
+    "css-selector-tokenizer": "0.8.0"
+  }
+}
